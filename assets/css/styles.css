@@ -108,8 +108,17 @@ a {
   display: flex;
 }
 
+.navbar__link::before {
+  display: block;
+  content: attr(title);
+  font-weight: 400;
+  height: 0;
+  overflow: hidden;
+}
+
 .action__login,
 .navbar__link {
+  display: inline-block;
   padding: 4px 21px;
   color: #c9d2da;
   font-size: 1.6rem;
@@ -118,7 +127,7 @@ a {
 
 .navbar__link:hover,
 .navbar__link--active {
-  text-shadow: 1px 0 0 currentColor;
+  font-weight: 400;
   color: #fff;
 }
 
